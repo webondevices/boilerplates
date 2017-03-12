@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Liran, Mate and Binu",
@@ -15,6 +16,7 @@
     "browserify": "^13.1.1",
     "gulp": "^3.9.1",
     "gulp-sass": "^3.0.0",
+    "gulp-connect": "^5.0.0",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
     "vinyl-source-stream": "^1.1.0"

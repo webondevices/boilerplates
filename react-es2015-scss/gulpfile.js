@@ -1,9 +1,9 @@
-var gulp = require("gulp");
-var browserify = require("browserify");
-var source = require("vinyl-source-stream");
-var sass = require("gulp-sass");
-var connect = require("gulp-connect");
-var config = require("./gulp.config.js");
+const gulp = require("gulp");
+const browserify = require("browserify");
+const source = require("vinyl-source-stream");
+const sass = require("gulp-sass");
+const connect = require("gulp-connect");
+const config = require("./gulp.config.js");
 
 
 function copy(settings) {
@@ -37,7 +37,7 @@ gulp.task("copy", function() {
 });
 
 gulp.task("sass", function() {
-	var options = {
+	const options = {
 		outputStyle: "compressed"
 	}
 	return gulp.src(config.source + "scss/style.scss")

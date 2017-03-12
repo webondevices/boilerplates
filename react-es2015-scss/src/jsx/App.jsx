@@ -2,11 +2,12 @@ import React from "react";
 
 class App extends React.Component {
 	render() {
-		return <div>
-					<div>Hello world, happy Hannukah!</div>
-					<img src="images/han.jpg" alt=""/>
-
-				</div>;
+		return (
+			<div>
+				<h1>Hi!</h1>
+				<img src="images/html5.png" alt=""/>
+			</div>
+		);
 	}
 }
 
