@@ -34,6 +34,12 @@ gulp.task("copy", function() {
 		from: config.source + "images/**/*",
 		to: config.build + "images/"
 	});
+
+	// Copy all JS files
+	copy({
+		from: config.source + "js/**/*",
+		to: config.build + "js/"
+	});
 });
 
 gulp.task("sass", function() {
@@ -48,7 +54,7 @@ gulp.task("sass", function() {
 
 gulp.task("watch", ["sass", "copy", "browserify"], function() {
 	gulp.watch(config.source + "scss/**/*", ["sass"]);
-	gulp.watch([config.source + "images/**/*", ".src/*.html"], ["copy"]);
+	gulp.watch([config.source + "images/**/*", config.source + "*.html", config.source + "js/*.js"], ["copy"]);
 	gulp.watch(config.source + "jsx/**/*", ["browserify"]);
 });
 
