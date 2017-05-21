@@ -6,7 +6,6 @@ const connect = require("gulp-connect");
 const config = require("./gulp.config.js");
 var del = require('del');
 
-
 function copy(settings) {
 	return gulp.src(settings.from)
 		.pipe(gulp.dest(settings.to))
@@ -23,7 +22,7 @@ gulp.task("browserify", function() {
 });
 
 gulp.task("clean", function() {
-	var pathsToClean = [config.build + "/*.html", config.build + "images/**/*", config.build + "js/**/*"];
+	var pathsToClean = [config.build + "/*.html", config.build + "images/**/*"];
 	return del(pathsToClean, {force : true});
 });
 
