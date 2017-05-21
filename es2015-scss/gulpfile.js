@@ -4,6 +4,7 @@ const source = require("vinyl-source-stream");
 const sass = require("gulp-sass");
 const connect = require("gulp-connect");
 const config = require("./gulp.config.js");
+var del = require('del');
 
 
 function copy(settings) {
@@ -21,8 +22,12 @@ gulp.task("browserify", function() {
 		.pipe(connect.reload());
 });
 
+gulp.task("clean", function() {
+	var pathsToClean = [config.build + "/*.html", config.build + "images/**/*", config.build + "js/**/*"];
+	return del(pathsToClean, {force : true});
+});
+
 gulp.task("copy", function() {
-	
 	// Copy all HTML files
 	copy({
 		from: config.source + "*.html",
@@ -33,12 +38,6 @@ gulp.task("copy", function() {
 	copy({
 		from: config.source + "images/**/*",
 		to: config.build + "images/"
-	});
-
-	// Copy all JS files
-	copy({
-		from: config.source + "js/**/*",
-		to: config.build + "js/"
 	});
 });
 
@@ -52,9 +51,9 @@ gulp.task("sass", function() {
 		.pipe(connect.reload());
 });
 
-gulp.task("watch", ["sass", "copy", "browserify"], function() {
+gulp.task("watch", ["sass", "clean", "copy", "browserify"], function() {
 	gulp.watch(config.source + "scss/**/*", ["sass"]);
-	gulp.watch([config.source + "images/**/*", config.source + "*.html", config.source + "js/*.js"], ["copy"]);
+	gulp.watch(["images/**/*", "*.html"], {cwd: config.source}, ["clean", "copy"]);
 	gulp.watch(config.source + "js/**/*", ["browserify"]);
 });
 
