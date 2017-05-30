@@ -1,1 +1,4 @@
-body{background-color:#fff}body h1{border:5px solid black}
+body {
+  background-color: white; }
+  body h1 {
+    border: 5px solid red; }
