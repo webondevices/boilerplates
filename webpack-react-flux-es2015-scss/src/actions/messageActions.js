@@ -1,10 +1,10 @@
-import AppDispatcher from '../dispatchers/AppDispatcher.js';
-import messageActions from '../constants/messageActions.js';
+import AppDispatcher from './../dispatcher/AppDispatcher';
+import actionTypes from './../constants/actionTypes';
 
 const messageActions = {
-    sendMessage(message) {
+    addMessage(message) {
         AppDispatcher.handleViewAction({
-            type: messageActions.SEND_MESSAGE,
+            type: actionTypes.ADD_MESSAGE,
             message: message
         });
     }

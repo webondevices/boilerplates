@@ -1,5 +1,5 @@
 import {Dispatcher} from 'flux';
-import actionSources from '../constants/actionSources';
+import actionSources from './../constants/actionSources';
 
 class AppDispatcher extends Dispatcher {
     handleViewAction(action) {
@@ -10,6 +10,4 @@ class AppDispatcher extends Dispatcher {
     }
 }
 
-let AppDispatcher = new Dispatcher();
-
-export default AppDispatcher;
+export default new AppDispatcher();

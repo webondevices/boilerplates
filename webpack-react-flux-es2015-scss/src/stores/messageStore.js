@@ -1,6 +1,6 @@
-import AppDispatcher from '../dispatchers/AppDispatcher.js';
-import messageActions from '../constants/messageActions.js';
-import actionSources from '../constants/actionSources';
+import AppDispatcher from './../dispatcher/AppDispatcher';
+import messageActions from './../constants/actionTypes';
+import actionSources from './../constants/actionSources';
 import {EventEmitter} from 'events';
 
 const CHANGE_EVENT = 'CHANGE';
@@ -15,12 +15,20 @@ class MessageStore extends EventEmitter {
         this.on(CHANGE_EVENT, callback);
     }
 
-     removeChangeListener(callback) {
+    removeChangeListener(callback) {
         this.removeListener(CHANGE_EVENT, callback);
     }
 
     emitChange() {
         this.emit(CHANGE_EVENT);
+    }
+
+    addNewMessage(message) {
+        this.messages.push(message);
+    }
+
+    getMessages() {
+        return this.messages;
     }
 }
 
@@ -30,8 +38,8 @@ AppDispatcher.register(payload => {
     const action = payload.action;
 
     switch(action.type) {
-        case messageActions.SEND_MESSAGE:
-            this.messages.push(action.message);
+        case messageActions.ADD_MESSAGE:
+            messageStoreInstance.addNewMessage(action.message);
             break;
     }
 
