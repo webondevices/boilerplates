@@ -2,8 +2,9 @@ import React from "react";
 import styles from './App.scss';
 import html5image from './../images/html5.png';
 
-import messageActions from './../actions/messageActions';
-import messageStore from './../stores/messageStore';
+import {bindActionCreators} from 'redux';
+import {connect} from 'react-redux';
+import * as messageActions from './../actions/messageActions';
 
 class App extends React.Component {
 
@@ -11,27 +12,11 @@ class App extends React.Component {
 		super();
 
 		this.state = {
-			messages: [],
 			newMessage: ''
 		};
 
-		this.onStoreChange = this.onStoreChange.bind(this);
 		this.editNewMessage = this.editNewMessage.bind(this);
 		this.addNewMessage = this.addNewMessage.bind(this);
-	}
-
-	componentDidMount() {
-		messageStore.addChangeListener(this.onStoreChange);
-	}
-
-	componentWillUnmount() {
-		messageStore.removeChangeListener(this.onStoreChange);
-	}
-
-	onStoreChange() {
-		this.setState({
-			messages: messageStore.getMessages()
-		});
 	}
 
 	editNewMessage(event) {
@@ -42,7 +27,7 @@ class App extends React.Component {
 
 	addNewMessage() {
 		if (this.state.newMessage.length > 0) {
-			messageActions.addMessage(this.state.newMessage);
+			this.props.actions.addMessage(this.state.newMessage);
 			this.setState({
 				newMessage: ''
 			});
@@ -62,11 +47,23 @@ class App extends React.Component {
 				<input className="submit-message" type="submit" onClick={this.addNewMessage} />
 
 				<ul className="message-box">
-					{this.state.messages.map((message, i) => this.getMessageBox(message, i))}
+					{this.props.messages.map((message, i) => this.getMessageBox(message, i))}
 				</ul>
 			</div>
 		);
 	}
 }
 
-export default App;
+function mapsStateToProps(state, ownProps) {
+	return {
+		messages: state.messages
+	};
+}
+
+function mapDispatchToProps(dispatch) {
+	return {
+		actions: bindActionCreators(messageActions, dispatch)
+	}
+}
+
+export default connect(mapsStateToProps, mapDispatchToProps)(App);
