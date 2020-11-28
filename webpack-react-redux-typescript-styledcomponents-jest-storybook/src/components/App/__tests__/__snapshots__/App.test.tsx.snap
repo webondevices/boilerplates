@@ -27,7 +27,7 @@ initialize {
           },
           "children": Array [
             Object {
-              "data": "The color of this page is: red",
+              "data": "The color of this page is:red",
               "next": null,
               "parent": [Circular],
               "prev": null,
@@ -58,6 +58,7 @@ initialize {
                 "next": Object {
                   "attribs": Object {
                     "id": "addButton",
+                    "type": "button",
                   },
                   "children": Array [
                     Object {
@@ -73,6 +74,7 @@ initialize {
                   "next": Object {
                     "attribs": Object {
                       "id": "deleteButton",
+                      "type": "button",
                     },
                     "children": Array [
                       Object {
@@ -91,9 +93,11 @@ initialize {
                     "type": "tag",
                     "x-attribsNamespace": Object {
                       "id": undefined,
+                      "type": undefined,
                     },
                     "x-attribsPrefix": Object {
                       "id": undefined,
+                      "type": undefined,
                     },
                   },
                   "parent": [Circular],
@@ -101,9 +105,11 @@ initialize {
                   "type": "tag",
                   "x-attribsNamespace": Object {
                     "id": undefined,
+                    "type": undefined,
                   },
                   "x-attribsPrefix": Object {
                     "id": undefined,
+                    "type": undefined,
                   },
                 },
                 "parent": [Circular],
@@ -115,6 +121,7 @@ initialize {
               Object {
                 "attribs": Object {
                   "id": "addButton",
+                  "type": "button",
                 },
                 "children": Array [
                   Object {
@@ -130,6 +137,7 @@ initialize {
                 "next": Object {
                   "attribs": Object {
                     "id": "deleteButton",
+                    "type": "button",
                   },
                   "children": Array [
                     Object {
@@ -148,9 +156,11 @@ initialize {
                   "type": "tag",
                   "x-attribsNamespace": Object {
                     "id": undefined,
+                    "type": undefined,
                   },
                   "x-attribsPrefix": Object {
                     "id": undefined,
+                    "type": undefined,
                   },
                 },
                 "parent": [Circular],
@@ -177,14 +187,17 @@ initialize {
                 "type": "tag",
                 "x-attribsNamespace": Object {
                   "id": undefined,
+                  "type": undefined,
                 },
                 "x-attribsPrefix": Object {
                   "id": undefined,
+                  "type": undefined,
                 },
               },
               Object {
                 "attribs": Object {
                   "id": "deleteButton",
+                  "type": "button",
                 },
                 "children": Array [
                   Object {
@@ -202,6 +215,7 @@ initialize {
                 "prev": Object {
                   "attribs": Object {
                     "id": "addButton",
+                    "type": "button",
                   },
                   "children": Array [
                     Object {
@@ -239,17 +253,21 @@ initialize {
                   "type": "tag",
                   "x-attribsNamespace": Object {
                     "id": undefined,
+                    "type": undefined,
                   },
                   "x-attribsPrefix": Object {
                     "id": undefined,
+                    "type": undefined,
                   },
                 },
                 "type": "tag",
                 "x-attribsNamespace": Object {
                   "id": undefined,
+                  "type": undefined,
                 },
                 "x-attribsPrefix": Object {
                   "id": undefined,
+                  "type": undefined,
                 },
               },
             ],
@@ -293,7 +311,7 @@ initialize {
         },
         "children": Array [
           Object {
-            "data": "The color of this page is: red",
+            "data": "The color of this page is:red",
             "next": null,
             "parent": [Circular],
             "prev": null,
@@ -324,6 +342,7 @@ initialize {
               "next": Object {
                 "attribs": Object {
                   "id": "addButton",
+                  "type": "button",
                 },
                 "children": Array [
                   Object {
@@ -339,6 +358,7 @@ initialize {
                 "next": Object {
                   "attribs": Object {
                     "id": "deleteButton",
+                    "type": "button",
                   },
                   "children": Array [
                     Object {
@@ -357,9 +377,11 @@ initialize {
                   "type": "tag",
                   "x-attribsNamespace": Object {
                     "id": undefined,
+                    "type": undefined,
                   },
                   "x-attribsPrefix": Object {
                     "id": undefined,
+                    "type": undefined,
                   },
                 },
                 "parent": [Circular],
@@ -367,9 +389,11 @@ initialize {
                 "type": "tag",
                 "x-attribsNamespace": Object {
                   "id": undefined,
+                  "type": undefined,
                 },
                 "x-attribsPrefix": Object {
                   "id": undefined,
+                  "type": undefined,
                 },
               },
               "parent": [Circular],
@@ -381,6 +405,7 @@ initialize {
             Object {
               "attribs": Object {
                 "id": "addButton",
+                "type": "button",
               },
               "children": Array [
                 Object {
@@ -396,6 +421,7 @@ initialize {
               "next": Object {
                 "attribs": Object {
                   "id": "deleteButton",
+                  "type": "button",
                 },
                 "children": Array [
                   Object {
@@ -414,9 +440,11 @@ initialize {
                 "type": "tag",
                 "x-attribsNamespace": Object {
                   "id": undefined,
+                  "type": undefined,
                 },
                 "x-attribsPrefix": Object {
                   "id": undefined,
+                  "type": undefined,
                 },
               },
               "parent": [Circular],
@@ -443,14 +471,17 @@ initialize {
               "type": "tag",
               "x-attribsNamespace": Object {
                 "id": undefined,
+                "type": undefined,
               },
               "x-attribsPrefix": Object {
                 "id": undefined,
+                "type": undefined,
               },
             },
             Object {
               "attribs": Object {
                 "id": "deleteButton",
+                "type": "button",
               },
               "children": Array [
                 Object {
@@ -468,6 +499,7 @@ initialize {
               "prev": Object {
                 "attribs": Object {
                   "id": "addButton",
+                  "type": "button",
                 },
                 "children": Array [
                   Object {
@@ -505,17 +537,21 @@ initialize {
                 "type": "tag",
                 "x-attribsNamespace": Object {
                   "id": undefined,
+                  "type": undefined,
                 },
                 "x-attribsPrefix": Object {
                   "id": undefined,
+                  "type": undefined,
                 },
               },
               "type": "tag",
               "x-attribsNamespace": Object {
                 "id": undefined,
+                "type": undefined,
               },
               "x-attribsPrefix": Object {
                 "id": undefined,
+                "type": undefined,
               },
             },
           ],
@@ -587,6 +623,7 @@ initialize {
             "next": Object {
               "attribs": Object {
                 "id": "addButton",
+                "type": "button",
               },
               "children": Array [
                 Object {
@@ -602,6 +639,7 @@ initialize {
               "next": Object {
                 "attribs": Object {
                   "id": "deleteButton",
+                  "type": "button",
                 },
                 "children": Array [
                   Object {
@@ -620,9 +658,11 @@ initialize {
                 "type": "tag",
                 "x-attribsNamespace": Object {
                   "id": undefined,
+                  "type": undefined,
                 },
                 "x-attribsPrefix": Object {
                   "id": undefined,
+                  "type": undefined,
                 },
               },
               "parent": [Circular],
@@ -630,9 +670,11 @@ initialize {
               "type": "tag",
               "x-attribsNamespace": Object {
                 "id": undefined,
+                "type": undefined,
               },
               "x-attribsPrefix": Object {
                 "id": undefined,
+                "type": undefined,
               },
             },
             "parent": [Circular],
@@ -644,6 +686,7 @@ initialize {
           Object {
             "attribs": Object {
               "id": "addButton",
+              "type": "button",
             },
             "children": Array [
               Object {
@@ -659,6 +702,7 @@ initialize {
             "next": Object {
               "attribs": Object {
                 "id": "deleteButton",
+                "type": "button",
               },
               "children": Array [
                 Object {
@@ -677,9 +721,11 @@ initialize {
               "type": "tag",
               "x-attribsNamespace": Object {
                 "id": undefined,
+                "type": undefined,
               },
               "x-attribsPrefix": Object {
                 "id": undefined,
+                "type": undefined,
               },
             },
             "parent": [Circular],
@@ -706,14 +752,17 @@ initialize {
             "type": "tag",
             "x-attribsNamespace": Object {
               "id": undefined,
+              "type": undefined,
             },
             "x-attribsPrefix": Object {
               "id": undefined,
+              "type": undefined,
             },
           },
           Object {
             "attribs": Object {
               "id": "deleteButton",
+              "type": "button",
             },
             "children": Array [
               Object {
@@ -731,6 +780,7 @@ initialize {
             "prev": Object {
               "attribs": Object {
                 "id": "addButton",
+                "type": "button",
               },
               "children": Array [
                 Object {
@@ -768,17 +818,21 @@ initialize {
               "type": "tag",
               "x-attribsNamespace": Object {
                 "id": undefined,
+                "type": undefined,
               },
               "x-attribsPrefix": Object {
                 "id": undefined,
+                "type": undefined,
               },
             },
             "type": "tag",
             "x-attribsNamespace": Object {
               "id": undefined,
+              "type": undefined,
             },
             "x-attribsPrefix": Object {
               "id": undefined,
+              "type": undefined,
             },
           },
         ],
@@ -793,7 +847,7 @@ initialize {
           },
           "children": Array [
             Object {
-              "data": "The color of this page is: red",
+              "data": "The color of this page is:red",
               "next": null,
               "parent": [Circular],
               "prev": null,

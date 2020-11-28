@@ -56,4 +56,10 @@ function App(props: Props) {
   );
 }
 
+App.defaultProps = {
+  todoList: [],
+  addTodo: () => {},
+  deleteLastTodo: () => {},
+};
+
 export default connect(mapStateToProps, mapDispatchToProps)(App);

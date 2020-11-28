@@ -5,7 +5,6 @@
 import {render} from 'react-dom';
 import {shallow} from 'enzyme';
 import App from './components/App';
-import '.';
 
 jest.mock('react-dom');
 

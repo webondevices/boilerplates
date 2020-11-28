@@ -7,7 +7,7 @@
     "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production",
     "test": "jest",
-    "lint": "eslint --cache --ext .js,.ts,.jsx,.tsx",
+    "lint": "eslint --cache --ext js,ts,jsx,tsx ./src",
     "storybook": "start-storybook"
   },
   "author": "Mate Marschalko",
